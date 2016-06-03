@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+#game {
+  width: 480px;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+}
+.scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #B0D0D8;
+  text-align: center;
+
+  /* see .active.scene */
+  transform: translate3d(0, 100%, 0);
+
+  transition: transform 0.3s ease-out;
+}
+.scene.active {
+  transform: translate3d(0, 0, 0);
+}
+
+.scene a {
+  padding: 1em;
+  background: #619391;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+.scene a:hover {
+  background: #466B6A;
+}
+
+/* Game Score */
+#hud.scene {
+  opacity: 0;
+  transform: none;
+  background: none;
+  transition: opacity 0.3s ease-out;
+  pointer-events: none;
+}
+#hud.active.scene {
+  opacity: 1;
+}
+
+/* Beautify */
+
+html {
+  background: #FCF8FC url(../images/noise-bg.png);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url(../images/landscape.png) top center repeat-x;
+  border-top: 5px solid #008894;
+}
+header {
+  width: 480px;
+  height: 100px;
+  margin: 2em auto;
+  background: url(../images/rush-header.png) center center no-repeat;
+  overflow: hidden;
+}
+header h1 {
+  text-indent: 100%;
+  white-space: nowrap;
+}
+#game {
+  margin: auto;
+  box-shodaw: 0 6px 3px -5px #000;
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: #C5A578;
+  border-left-color: #977E5A;
+  border-right-color: #977E5A;
+  border-bottom-color: #7C6749;
+}
+
+#menu {
+  background: url(../images/rush-menu-scene.png);
+  padding: 2em;
+  padding-top: 150px;
+}
+#gameover {
+  background: url(../images/rush-gameover-scene.png);
+  padding-top: 170px;
+}
+
+section {
+  width: 480px;
+  margin: auto;
+}
+
+ul.how-to-play {
+  list-style-image: url(../images/coin1.png);
+  list-style-position: inside;
+  padding: 0;
+}
+
+.hr {
+  background: url(../images/hr.png) center center no-repeat;
+  height: 50px;
+}
+.hr hr {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  color: #999;
+  font-size: 0.8em;
+  margin-bottom: 3em;
+}
+footer a {
+  text-decoration: none;
+  color: #999;
+  transition: all 0.3s ease-out;
+}
+footer a:hover {
+  color: #000;
+}

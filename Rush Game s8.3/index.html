@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Rush game</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/game.css">
+  </head>
+  <body>
+    <div id="game">
+      <canvas id="game-canvas" class="active scene" width="480" height="320">
+        This is an interactive game.
+      </canvas>
+      <div id="menu" class="active scene">
+        <a href="#game-canvas" id="start-game-button">Start Game</a>
+        <p>About: This is an example game HTML5 Game Development video course.</p>
+      </div>
+      <div id="gameover" class="scene">
+        <a href="#game-canvas" id="restart-game-button">Restart Game</a>
+        <a href="#menu" id="exit-button">Exit to Menu</a>
+      </div>
+      <div id="hud" class="scene">
+        <p>Score: <span id="score-text">0</span></p>
+      </div>
+    </div>
+
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+		<script src="scripts/rush-game-graphics.js"></script>
+    <script src="scripts/game-es6.js"></script>
+  </body>
+</html>
