@@ -80,9 +80,9 @@ class Game{
     return '1.0.0';
   }
   loadSound() {
+    createjs.Sound.alternateExtensions = ["ogg", "wav"];
     createjs.Sound.registerSound("soundfx/jump7.aiff", "Jump");
     createjs.Sound.registerSound("soundfx/game-over.aiff", "Game Over");
-    createjs.Sound.alternateExtensions = ["ogg", "wav"];
   }
   restartGame() {
     this.gameData.resetData();

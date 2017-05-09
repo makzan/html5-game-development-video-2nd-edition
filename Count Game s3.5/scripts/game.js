@@ -126,9 +126,9 @@ var Game = function () {
   }, {
     key: "loadSound",
     value: function loadSound() {
+      createjs.Sound.alternateExtensions = ["ogg", "wav"];
       createjs.Sound.registerSound("soundfx/jump7.aiff", "Jump");
       createjs.Sound.registerSound("soundfx/game-over.aiff", "Game Over");
-      createjs.Sound.alternateExtensions = ["ogg", "wav"];
     }
   }, {
     key: "restartGame",
