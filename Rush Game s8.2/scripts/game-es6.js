@@ -260,7 +260,7 @@ class World extends createjs.Container {
   }
   generateCoins() {
     for (var platform of this.platforms) {
-      var platform = this.platforms[i];
+
       var levelNumber = platform.levelNumber;
       var chance = this.levelData.levels[levelNumber].coinChance;
       if (Math.random() < chance) {

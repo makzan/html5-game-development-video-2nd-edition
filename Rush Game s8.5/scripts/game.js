@@ -405,7 +405,7 @@ var World = function (_createjs$Container2) {
         for (var _iterator2 = this.platforms[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
           var platform = _step2.value;
 
-          var platform = this.platforms[i];
+
           var levelNumber = platform.levelNumber;
           var chance = this.levelData.levels[levelNumber].coinChance;
           if (Math.random() < chance) {
