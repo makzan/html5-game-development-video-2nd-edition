@@ -222,7 +222,7 @@ class World extends createjs.Container {
     for (var level of this.levelData.levels) {
       for (var i=0; i<level.total; i++) {
         var platform = new Platform();
-        platform.x = nextx;
+        platform.x = nextX;
         platform.y = nextY;
 
         var width = platform.getBounds().width;

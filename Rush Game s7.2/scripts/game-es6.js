@@ -140,7 +140,7 @@ class World extends createjs.Container {
 
     for (var i=0; i<total; i++) {
       var platform = new Platform();
-      platform.x = nextx;
+      platform.x = nextX;
       platform.y = nextY;
 
       var width = platform.getBounds().width;

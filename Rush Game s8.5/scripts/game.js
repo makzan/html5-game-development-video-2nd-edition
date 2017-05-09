@@ -343,7 +343,7 @@ var World = function (_createjs$Container2) {
 
           for (var i = 0; i < level.total; i++) {
             var platform = new Platform();
-            platform.x = nextx;
+            platform.x = nextX;
             platform.y = nextY;
 
             var width = platform.getBounds().width;
